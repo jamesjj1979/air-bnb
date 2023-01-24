@@ -10,8 +10,18 @@
  letter-spacing: -18px;
  }
  .wrapper{
+
    display: flex;
-   position: relative;
+     margin: 0;
+position: relative;
+  top: 325px;
+margin-left: auto;
+    margin-right: auto;
+ display: flex;
+ justify-content: center;
+ justify-self: center;
+  transform: translateY(-50%);
+  text-align: center;
    
  }
 

@@ -8,10 +8,8 @@ function App() {
  
   return (
     <div className="App">
-      <Expire delay={16500}>
-        
-      </Expire>
-      <Inspire  delay={16500}></Inspire>
+      <Expire delay={16900}></Expire>
+      <Inspire  delay={16900}></Inspire>
     </div>
   );
 }

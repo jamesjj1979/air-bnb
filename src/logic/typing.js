@@ -15,7 +15,7 @@ const Expire = (props) => {
     <div className="wrapper">
       <Typed
         className="typed"
-        strings={["For anywhere you wanna be", "There is"]}
+        strings={["For anywhere you wanna be", "There is..."]}
         typeSpeed={150}
         backSpeed={200}
       />
