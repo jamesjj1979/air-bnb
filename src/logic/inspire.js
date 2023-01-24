@@ -1,12 +1,12 @@
-
 import React, { useEffect, useState } from "react";
 
-const Expire = (props) => {
-  const [visible, setVisible] = useState(true);
+
+const Inspire = (props) => {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setVisible(false);
+      setVisible(true);
     }, props.delay);
     return () => clearTimeout(timer);
   }, [props.delay]);
@@ -14,4 +14,4 @@ const Expire = (props) => {
   return visible ? <div>{props.children}</div> : <div />;
 };
 
-export default Expire;
+export default Inspire;
