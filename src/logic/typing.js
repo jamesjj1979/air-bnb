@@ -1,6 +1,6 @@
-
+import Typed from "react-typed";
 import React, { useEffect, useState } from "react";
-
+import "../css/typing.css";
 const Expire = (props) => {
   const [visible, setVisible] = useState(true);
 
@@ -11,7 +11,18 @@ const Expire = (props) => {
     return () => clearTimeout(timer);
   }, [props.delay]);
 
-  return visible ? <div >{props.children}</div> : <div />;
+  return visible ? (
+    <div className="wrapper">
+      <Typed
+        className="typed"
+        strings={["For anywhere you wanna be", "There is"]}
+        typeSpeed={150}
+        backSpeed={200}
+      />
+    </div>
+  ) : (
+    <div />
+  );
 };
 
 export default Expire;
