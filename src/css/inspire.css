@@ -1,4 +1,7 @@
  .color{
   color: red;
-  
+  font-size: 200px;
+    font-family: 'MontrealRegular';
+   font-weight: normal;
+   font-style: normal;
  }
