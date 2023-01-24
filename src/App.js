@@ -8,13 +8,13 @@ function App() {
  
   return (
     <div className="App">
-      {/* <Expire delay={16500}>
+      <Expire delay={16500}>
         <Typed
           strings={["For anywhere you wanna be", "There is"]}
           typeSpeed={150}
           backSpeed={200}
         />
-      </Expire> */}
+      </Expire>
       <Inspire  delay={10}></Inspire>
     </div>
   );

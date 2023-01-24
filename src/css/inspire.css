@@ -1,7 +1,23 @@
  .color{
-  color: red;
+  color: rgb(255,65,78);
   font-size: 200px;
     font-family: 'MontrealRegular';
    font-weight: normal;
    font-style: normal;
+ display: flex;
+ justify-content: center;
+ margin: 0;
+ }
+ .wrapper{
+   display: flex;
+   position: relative;
+   
+ }
+
+ img{
+      margin: 0;
+  position: relative;
+  top: 45px;
+ 
+ 
  }

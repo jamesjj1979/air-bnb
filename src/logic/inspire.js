@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/inspire.css";
-
+import airbnb from "../img/airbnb.png";
 
 const Inspire = (props) => {
   const [visible, setVisible] = useState(false);
@@ -12,7 +12,7 @@ const Inspire = (props) => {
     return () => clearTimeout(timer);
   }, [props.delay]);
 
-  return visible ? <p className="color">airbnb </p> : <div />;
+  return visible ? <div className="wrapper"><img alt="airbnb logo" height="160px" width="160px"src={airbnb}></img><p className="color">airbnb </p> </div>: <div />;
 };
 
 export default Inspire;
