@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../css/inspire.css";
 
 
 const Inspire = (props) => {
@@ -11,7 +12,7 @@ const Inspire = (props) => {
     return () => clearTimeout(timer);
   }, [props.delay]);
 
-  return visible ? <div>{props.children}</div> : <div />;
+  return visible ? <p className="color">airbnb </p> : <div />;
 };
 
 export default Inspire;

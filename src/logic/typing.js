@@ -11,7 +11,7 @@ const Expire = (props) => {
     return () => clearTimeout(timer);
   }, [props.delay]);
 
-  return visible ? <div>{props.children}</div> : <div />;
+  return visible ? <div >{props.children}</div> : <div />;
 };
 
 export default Expire;
