@@ -21,6 +21,7 @@
 }
 .headerEnd{
  background-color: yellow;
+ display: flex;
 }
 .svgIcon{
  background-color:  rgb(255,65,78); 

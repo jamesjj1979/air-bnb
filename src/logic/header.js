@@ -1,5 +1,6 @@
 import logo from "../img/logo.png";
 import world from "../img/world.png";
+import login from "../img/login.png";
 import "../css/header.css";
 
 function Header() {
@@ -32,10 +33,13 @@ function Header() {
           </p>
         </div>
         <div className="headerEnd">
-          <div>Airbnb your home</div>
-          <div>
+          <p>Airbnb your home</p>
+          <p>
             <img alt="world logo" height="25" width="25" src={world}></img>
-          </div>
+          </p>
+          <p>
+            <img alt="login in logo" height="30" width="70" src={login}></img>
+          </p>
           <div></div>
         </div>
       </div>
