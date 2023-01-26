@@ -1,4 +1,5 @@
 import logo from "../img/logo.png";
+import world from "../img/world.png";
 import "../css/header.css";
 
 function Header() {
@@ -30,7 +31,13 @@ function Header() {
             </svg>
           </p>
         </div>
-        <div className="headerEnd">d</div>
+        <div className="headerEnd">
+          <div>Airbnb your home</div>
+          <div>
+            <img alt="world logo" height="25" width="25" src={world}></img>
+          </div>
+          <div></div>
+        </div>
       </div>
     </div>
   );
