@@ -1,4 +1,4 @@
-import "./css/App.css";
+
 import Expire from "./logic/typing";
 import Inspire from "./logic/inspire";
 import Header from "./logic/header";
