@@ -3,6 +3,10 @@
 
 }
 
+.marginRight{
+  margin-right: 30px;
+}
+
 .containerHeader{
   height: 65px;
   
@@ -14,7 +18,15 @@
 }
 .headerMiddle{
   display: flex;
+
+  
 }
 .headerEnd{
  background-color: yellow;
+}
+.svgIcon{
+ background-color:  rgb(255,65,78); 
+ border-radius: 50%;
+ position: relative;
+ top: -8px;
 }

@@ -10,6 +10,7 @@ function App() {
       <Expire delay={16900}></Expire>
       <Inspire delay={16900}></Inspire>
     </div>
+    
   );
 }
 
