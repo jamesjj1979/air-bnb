@@ -1,7 +1,20 @@
 .App {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+   font-family: 'MontrealRegular';
 
 }
-.color {
-  color: red;
+
+.containerHeader{
+  height: 65px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.airbnbLogo{
+  background-color: green;
+}
+.headerMiddle{
+  background-color: blue;
+}
+.headerEnd{
+ background-color: yellow;
 }
