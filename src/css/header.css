@@ -5,15 +5,15 @@
 
 .containerHeader{
   height: 65px;
-  background-color: red;
+  
   display: flex;
   justify-content: space-between;
 }
 .airbnbLogo{
-  background-color: green;
+ 
 }
 .headerMiddle{
-  background-color: blue;
+  display: flex;
 }
 .headerEnd{
  background-color: yellow;

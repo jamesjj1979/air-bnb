@@ -6,9 +6,14 @@ function Header() {
     <div className="App">
       <div className="containerHeader">
         <div className="airbnbLogo">
-          <img alt="airbnb logo" height="160px" width="160px" src={logo}></img>
+          <img alt="airbnb logo" height="50" width="100" src={logo}></img>
         </div>
-        <div className="headerMiddle">d</div>
+        <div className="headerMiddle">
+          <p>Anywhere</p>
+          <p>Any week</p>
+          <p>Add guests</p>
+          <p></p>
+        </div>
         <div className="headerEnd">d</div>
       </div>
     </div>
