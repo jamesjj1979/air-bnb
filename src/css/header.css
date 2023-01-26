@@ -6,7 +6,9 @@
 .marginRight{
   margin-right: 30px;
 }
-
+.marginRight2{
+  margin-right: 20px;
+}
 .containerHeader{
   height: 65px;
   
@@ -16,12 +18,15 @@
 
 .headerMiddle{
   display: flex;
-
+  position: relative;
+left: 75px;
   
 }
 .headerEnd{
- background-color: yellow;
+
  display: flex;
+ margin-right: 70px;
+ 
 }
 .svgIcon{
  background-color:  rgb(255,65,78); 

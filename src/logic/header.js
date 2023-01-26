@@ -33,8 +33,8 @@ function Header() {
           </p>
         </div>
         <div className="headerEnd">
-          <p>Airbnb your home</p>
-          <p>
+          <p className="marginRight2">Airbnb your home</p>
+          <p className="marginRight2">
             <img alt="world logo" height="25" width="25" src={world}></img>
           </p>
           <p>
