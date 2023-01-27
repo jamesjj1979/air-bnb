@@ -6,24 +6,27 @@ function Modal() {
  document.body.classList.toggle("show-nav");
 
     };
+    let href=""
 return (
   <div className="modalWrapper">
     <nav>
-      <div >
-        <img src={me} width="200px" height="200px"alt="user" />
+      <div>
+        <img src={me} width="200px" height="200px" alt="user" />
       </div>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href={href} onClick={navigationButton}>
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">Portfolio</a>
+          <a href={href}>Portfolio</a>
         </li>
         <li>
-          <a href="#">About Me</a>
+          <a href={href}>About Me</a>
         </li>
         <li>
-          <a href="#">Contact Me</a>
+          <a href={href}>Contact Me</a>
         </li>
       </ul>
     </nav>
