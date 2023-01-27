@@ -1,4 +1,5 @@
 import "../css/modal.css";
+import me from "../img/me.jpeg";
 
 function Modal() {
     let navigationButton = function () {
@@ -9,7 +10,7 @@ return (
   <div className="modalWrapper">
     <nav>
       <div >
-        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user" />
+        <img src={me} width="200px" height="200px"alt="user" />
       </div>
       <ul>
         <li>
@@ -19,7 +20,7 @@ return (
           <a href="#">Portfolio</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="#">About Me</a>
         </li>
         <li>
           <a href="#">Contact Me</a>
