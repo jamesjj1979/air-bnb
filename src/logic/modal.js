@@ -1,12 +1,14 @@
 import "../css/modal.css";
 import me from "../img/me.jpeg";
 
-function Modal() {
-    let navigationButton = function () {
- document.body.classList.toggle("show-nav");
 
+function Modal() {
+    let navigationButton = function (e) {
+ document.body.classList.toggle("show-nav");
+e.preventDefault();
     };
-    let href=""
+    let href = ""
+    let github = "https://github.com/jamesjj1979";
 return (
   <div className="modalWrapper">
     <nav>
@@ -20,7 +22,9 @@ return (
           </a>
         </li>
         <li>
-          <a href={href}>Portfolio</a>
+          <a href={github} rel="noreferrer" target="_blank">
+            Portfolio
+          </a>
         </li>
         <li>
           <a href={href}>About Me</a>

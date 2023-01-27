@@ -108,7 +108,6 @@ left: 4.5px;
 
 .fadeIn {
   font-family: Arial;
-  font-size: 150px;
   animation: fadeIn 7s;
 }
 @keyframes fadeIn {
