@@ -1,5 +1,5 @@
 import logo from "../img/logo.png";
-import world from "../img/world.png";
+import world1 from "../img/world1.png";
 import login from "../img/login.png";
 import search from "../img/search.png";
 import "../css/header.css";
@@ -14,17 +14,18 @@ function Header() {
      useEffect(() => {
        const timer = setTimeout(() => {
          setVisible(true);
-       }, 17000);
+       }, 0);
        return () => clearTimeout(timer);
      }, []);
     
+    let url = "";
     
     
         return visible ? (
           <div className="header fadeIn">
             <div className="containerHeader">
               <div className="airbnbLogo">
-                <img alt="airbnb logo" height="50" width="100" src={logo}></img>
+              <a href={url}> <img alt="airbnb logo" height="50" width="100" src={logo}></img></a> 
               </div>
               <div className="headerMiddle">
                 <div className="hMiddle">
@@ -42,13 +43,13 @@ function Header() {
                 </div>
               </div>
               <div className="headerEnd">
-                <p className="marginRight2 headerEnd1">Airbnb your home</p>
+                <p className="marginRight2 headerEnd1"> Airbnb your home</p>
                 <p className="marginRight2 headerEnd2">
                   <img
                     alt="world logo"
                     height="25"
                     width="25"
-                    src={world}
+                    src={world1}
                   ></img>
                 </p>
                 <p className="headerEnd3">

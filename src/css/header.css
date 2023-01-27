@@ -33,8 +33,11 @@ top: 13px;
   border-radius: 25px;
   border: .3px grey solid;
   height:40px;
-width: 345px;
+width: 320px;
 box-shadow: 1px 1px 1px .1px rgb(195, 195, 195);
+}
+.headerMiddle:hover{
+  cursor: pointer;
 }
 .headerMiddle:hover{
   box-shadow: 1px 2px 2px .2px grey;
@@ -52,12 +55,30 @@ box-shadow: 1px 1px 1px .1px rgb(195, 195, 195);
  
 }
 .headerEnd1{
+  display: flex;
+  align-items:center;
+ justify-content:center;
 position: relative;
-top: 12px;
+width: 130px;
+  
+}
+.headerEnd1:hover{
+cursor: pointer;
+border: .3px grey ;
+border-radius: 25px;
+background-color: rgb(245, 244, 244);
 }
 .headerEnd2{
 position: relative;
-top: 9px;
+display: flex;
+  align-items:center;
+ justify-content:center;
+ width: 45px;
+ border-radius: 50%;
+}
+.headerEnd2:hover{
+background-color: rgb(245, 244, 244);
+
 }
 .headerEnd3{
 position: relative;
@@ -66,6 +87,10 @@ border: .3px grey solid;
 height: 40px;
 width: 80px;
 border-radius: 35px;
+}
+.headerEnd3:hover{
+ box-shadow: 1px 2px 2px .2px grey;
+
 }
 .loginLogo{
 position: relative;
