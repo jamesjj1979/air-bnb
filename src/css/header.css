@@ -80,3 +80,13 @@ left: 4.5px;
   left: -15px;
   top: -7px;
 }
+
+.fadeIn {
+  font-family: Arial;
+  font-size: 150px;
+  animation: fadeIn 7s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
