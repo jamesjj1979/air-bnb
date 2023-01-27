@@ -10,14 +10,14 @@ function Footer() {
  useEffect(() => {
    const timer = setTimeout(() => {
      setVisible(true);
-   }, 0);
+   }, 13000);
    return () => clearTimeout(timer);
  }, []);
     
    
 
     return visible ? (
-      <div >
+      <div className="fadeIn">
       
           <ul className="footerWrapper1">
             <li>
