@@ -51,6 +51,29 @@ box-shadow: 1px 1px 1px .1px rgb(195, 195, 195);
  margin-right: 70px;
  
 }
+.headerEnd1{
+position: relative;
+top: 12px;
+}
+.headerEnd2{
+position: relative;
+top: 9px;
+}
+.headerEnd3{
+position: relative;
+top: px;
+border: .3px grey solid;
+height: 40px;
+width: 80px;
+border-radius: 35px;
+}
+.loginLogo{
+position: relative;
+top: 6px;
+left: 4.5px;
+
+}
+
 .svgIcon{
   position: relative;
 
