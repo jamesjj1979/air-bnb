@@ -10,11 +10,14 @@ function App() {
   return (
     <div className="App">
       <Header />
+      
       <Expire delay={12000} />
       <Inspire delay={12000} />
       <Modal />
-      <SplashModal />
+     
+
       <Footer />
+       <SplashModal />
     </div>
   );
 }

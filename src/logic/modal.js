@@ -78,7 +78,7 @@ function Modal() {
 
       <div className="modalWrapper">
         <div className="modal-container" id="modal">
-          <div className="modal">
+          <div className="modal1">
             <button class="close-btn" id="close" onClick={modalClose}>
               <i class="fa fa-times"></i>
             </button>
