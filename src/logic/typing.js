@@ -18,6 +18,7 @@ const Expire = (props) => {
         strings={["For anywhere you want to be", "There is..."]}
         typeSpeed={120}
         backSpeed={100}
+        
       />
     </div>
   ) : (

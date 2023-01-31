@@ -1,7 +1,9 @@
 import "../css/modal.css";
 import me from "../img/me.jpeg";
+import emailjs from "@emailjs/browser";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+
 function Modal() {
   const [visible, setVisible] = useState(false);
 
@@ -15,7 +17,7 @@ function Modal() {
   useEffect(() => {
     const timer1 = setTimeout(() => {
       navigationButton();
-    }, 26000);
+    }, 28000);
     return () => clearTimeout(timer1);
   }, []);
 
@@ -26,19 +28,40 @@ function Modal() {
   let prevent = function (e) {
     const modal = document.getElementById("modal");
     modal.classList.add("show-modal");
+     
     e.preventDefault();
   };
 
   let modalClose = function (e) {
     const modal = document.getElementById("modal");
-
     modal.classList.remove("show-modal");
-
     e.preventDefault();
   };
 
   let href = "";
   let github = "https://github.com/jamesjj1979";
+
+  const form = useRef()
+ const sendEmail = (e) => {
+   e.preventDefault();
+
+   emailjs
+     .sendForm(
+       "service_yc9362a",
+       "template_kk86wjd",
+       form.current,
+       "8xArrDlQhIgOdHQTj"
+     )
+     .then(
+       (result) => {
+         console.log(result.text);
+       },
+       (error) => {
+         console.log(error.text);
+       }
+   );
+   e.target.reset()
+ };
 
   return visible ? (
     <div className="modalWrapper">
@@ -74,7 +97,7 @@ function Modal() {
               <i class="fa fa-times"></i>
             </button>
             <div className="modal-header">
-              <h3>Sign Up</h3>
+              <h3>About Me</h3>
             </div>
             <div className="modal-content">
               <p>This is working...</p>
@@ -82,6 +105,33 @@ function Modal() {
           </div>
         </div>
       </div>
+      <section>
+        <div className="container">
+          <h2 className="H2"> Contact Me</h2>
+          <form ref={form} onSubmit={sendEmail} className="form2">
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="user_name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              name="subject"
+              required
+            />
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <button className="--bnt-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </div>
   ) : (
     <div />
