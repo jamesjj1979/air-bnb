@@ -25,7 +25,8 @@ function SplashModal() {
     modal.classList.remove("show-modal");
     e.preventDefault();
   };
-  
+
+  let github = "https://github.com/jamesjj1979";
 
   return visible ? (
     <div className="modalWrapper">
@@ -39,10 +40,22 @@ function SplashModal() {
               <h3>Welcome!!</h3>
             </div>
             <div className="modal-content">
-                          <p>Thank you for taking the time to review this project. I wanted to take the time to point out that none of the buttons in the header actually work besides the hamburger button and all the links on the pop open navigation menu. But feel free to take a look at my github(portfolio link), check out my about section and if you want to leave any feedback the contact me link is linked to my email box.</p>
-                          
-                          <p>Once again thank you for your time.</p>
-                          <p>Jim Jorgensen</p>
+              <p>
+                Thank you for taking the time to review this project. I wanted
+                to take the time to point out that none of the buttons in the
+                header actually work besides the hamburger button and all the
+                links on the pop open navigation menu. But feel free to take a
+                look at my github(
+                <a href={github} rel="noreferrer" target="_blank">
+                  Portfolio Link
+                </a>
+                ), check out my about section and if you want to
+                leave any feedback the contact me link is linked to my email
+                box.
+              </p>
+
+              <p>Once again thank you for your time.</p>
+              <p>Jim Jorgensen</p>
             </div>
           </div>
         </div>
