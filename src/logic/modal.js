@@ -1,20 +1,23 @@
 import "../css/modal.css";
 import me from "../img/me.jpeg";
 
-
 import React, { useEffect, useState } from "react";
 function Modal() {
-   
+  const [visible, setVisible] = useState(false);
 
-   const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 13000);
+    return () => clearTimeout(timer);
+  }, []);
 
-   useEffect(() => {
-     const timer = setTimeout(() => {
-       setVisible(true);
-     }, 13000);
-     return () => clearTimeout(timer);
-   }, []);
-
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      navigationButton();
+    }, 26000);
+    return () => clearTimeout(timer1);
+  }, []);
 
   let navigationButton = function (e) {
     document.body.classList.toggle("show-nav");
@@ -24,26 +27,18 @@ function Modal() {
     const modal = document.getElementById("modal");
     modal.classList.add("show-modal");
     e.preventDefault();
-   
   };
 
   let modalClose = function (e) {
-  const modal = document.getElementById("modal");
-    modal.classList.remove("show-modal")
+    const modal = document.getElementById("modal");
+
+    modal.classList.remove("show-modal");
+
     e.preventDefault();
   };
+
   let href = "";
   let github = "https://github.com/jamesjj1979";
-
-  
- 
-  
-
-
-
-
-
-
 
   return visible ? (
     <div className="modalWrapper">
@@ -67,15 +62,11 @@ function Modal() {
               About Me
             </a>
           </li>
-          <li>
-            <a href={href}>Contact Me</a>
-          </li>
         </ul>
       </nav>
       <button id="toggle" className="toggle" onClick={navigationButton}>
         <i className="fa fa-bars fa-2x"></i>
       </button>
-
       <div className="modalWrapper">
         <div className="modal-container" id="modal">
           <div className="modal1">
@@ -87,7 +78,6 @@ function Modal() {
             </div>
             <div className="modal-content">
               <p>This is working...</p>
-                
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import "../css/splashModal.css";
 import React, { useEffect, useState } from "react";
 function SplashModal() {
@@ -11,15 +10,14 @@ function SplashModal() {
     return () => clearTimeout(timer);
   }, []);
 
-    useEffect(() => {
-     const modal = document.getElementById("splashmodal");
-   setTimeout(() => {
-     modal.classList.add("show-modal");
-   }, 1000);
-   return () => {};
- });
- 
-    
+  useEffect(() => {
+    const modal = document.getElementById("splashmodal");
+    setTimeout(() => {
+      modal.classList.add("show-modal");
+    }, 1000);
+    return () => {};
+  });
+
   let modalClose = function (e) {
     const modal = document.getElementById("splashmodal");
     modal.classList.remove("show-modal");
@@ -43,15 +41,14 @@ function SplashModal() {
               <p>
                 Thank you for taking the time to review this project. I wanted
                 to take the time to point out that none of the buttons in the
-                header actually work besides the hamburger button and all the
-                links on the pop open navigation menu. But feel free to take a
-                look at my github(
+                header actually work besides the hamburger button in the upper
+                left and all the links on the pop open navigation menu. But feel
+                free to take a look at my github(
                 <a href={github} rel="noreferrer" target="_blank">
                   Portfolio Link
                 </a>
-                ), check out my about section and if you want to
-                leave any feedback the contact me link is linked to my email
-                box.
+                ) and check out my about section. This Project was done using
+                react with hooks and javascript!!
               </p>
 
               <p>Once again thank you for your time.</p>
