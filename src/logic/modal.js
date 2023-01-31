@@ -28,7 +28,6 @@ function Modal() {
   let prevent = function (e) {
     const modal = document.getElementById("modal");
     modal.classList.add("show-modal");
-     
     e.preventDefault();
   };
 
@@ -38,11 +37,21 @@ function Modal() {
     e.preventDefault();
   };
 
+  let openContact = function (e) {
+    const contact = document.getElementById("contact");
+     contact.classList.add("show-contact");
+     e.preventDefault();
+  
+   
+  };
+
+
   let href = "";
   let github = "https://github.com/jamesjj1979";
 
   const form = useRef()
- const sendEmail = (e) => {
+  const sendEmail = (e) => {
+    const contact = document.getElementById("contact");
    e.preventDefault();
 
    emailjs
@@ -61,6 +70,7 @@ function Modal() {
        }
    );
    e.target.reset()
+    contact.classList.remove("show-contact");
  };
 
   return visible ? (
@@ -85,6 +95,11 @@ function Modal() {
               About Me
             </a>
           </li>
+          <li>
+            <a href={href} onClick={openContact}>
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
       <button id="toggle" className="toggle" onClick={navigationButton}>
@@ -105,32 +120,38 @@ function Modal() {
           </div>
         </div>
       </div>
-      <section>
-        <div className="container">
-          <h2 className="H2"> Contact Me</h2>
-          <form ref={form} onSubmit={sendEmail} className="form2">
-            <input
-              type="text"
-              placeholder="Full Name"
-              name="user_name"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="user_email"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              name="subject"
-              required
-            />
-            <textarea name="message" cols="30" rows="10"></textarea>
-            <button className="--bnt-primary" type="submit">Send Message</button>
-          </form>
-        </div>
+
+      <section id="contact" className="emailContainer">
+        <div className="show-contact " id="contact">
+        
+           
+            <form ref={form} onSubmit={sendEmail} className="form2">
+               <h3 className="contacth3"> Contact Me</h3>
+              <input
+                type="text"
+                placeholder="Full Name"
+                name="user_name"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="user_email"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                required
+              />
+              <textarea name="message" cols="30" rows="10"></textarea>
+              <button className="--bnt-primary" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+      
       </section>
     </div>
   ) : (

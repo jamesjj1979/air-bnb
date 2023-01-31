@@ -196,10 +196,23 @@ button:focus {
 }
 .form2{
   position: relative;
-  top: -200px;
+ left: 400px;
+ top: -150px;
 display: flex;
 flex-direction: column;
 z-index: 1110;
+width: 200px;
+border: 2px solid black
+ 
 }
 
 
+.emailContainer {
+
+  display: none;
+
+}
+
+.emailContainer.show-contact{
+  display: block;
+}
