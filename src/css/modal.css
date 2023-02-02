@@ -2,7 +2,7 @@
 
 :root {
   --modal-duration: 1s;
-  --primary-color: #30336b;
+  --primary-color: rgb(255,65,78);
   --secondary-color: #be2edd;
 }
 
@@ -86,15 +86,6 @@ header p {
   margin: 30px 0;
 }
 
-button,
-input[type='submit'] {
-  background-color: var(--secondary-color);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 12px;
-}
 
 button:focus {
   outline: none;
@@ -111,7 +102,9 @@ button:focus {
   padding: 12px 30px;
   font-size: 20px;
 }
-
+.btn{
+  background-color: rgb(255,65,78);
+}
 .container {
   padding: 15px;
   margin: 0 auto;
@@ -201,9 +194,10 @@ button:focus {
 display: flex;
 flex-direction: column;
 z-index: 1110;
-width: 200px;
-border: 2px solid black
- 
+width: 500px;
+border: 2px solid black;
+background-color: white;
+border-radius: 7px;
 }
 
 
@@ -215,4 +209,7 @@ border: 2px solid black
 
 .emailContainer.show-contact{
   display: block;
+}
+.contacth3{
+  text-align: center;
 }

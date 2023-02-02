@@ -44,7 +44,11 @@ function Modal() {
   
    
   };
-
+let contactClose = function (e) {
+  const contact = document.getElementById("contact");
+  contact.classList.remove("show-contact");
+  e.preventDefault();
+};
 
   let href = "";
   let github = "https://github.com/jamesjj1979";
@@ -123,35 +127,36 @@ function Modal() {
 
       <section id="contact" className="emailContainer">
         <div className="show-contact " id="contact">
-        
-           
-            <form ref={form} onSubmit={sendEmail} className="form2">
-               <h3 className="contacth3"> Contact Me</h3>
-              <input
-                type="text"
-                placeholder="Full Name"
-                name="user_name"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                name="user_email"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                name="subject"
-                required
-              />
-              <textarea name="message" cols="30" rows="10"></textarea>
-              <button className="--bnt-primary" type="submit">
-                Send Message
-              </button>
-            </form>
-          </div>
-      
+          <form ref={form} onSubmit={sendEmail} className="form2">
+            <button class="btn" onClick={contactClose}>
+              <i class="fa fa-times"></i>
+            </button>
+            <h3 className="contacth3"> Contact Me</h3>
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="user_name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              required
+            />
+            <input type="text" placeholder="Subject" name="subject" required />
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Write Message Here"
+            ></textarea>
+            <div></div>
+            <button className="--bnt-primary btn" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
       </section>
     </div>
   ) : (

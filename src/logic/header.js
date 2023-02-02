@@ -21,10 +21,9 @@ function Header() {
     <div className="header fadeIn">
       <div className="containerHeader">
         <div className="airbnbLogo">
-          <a href={url}>
-            {" "}
+         
             <img alt="airbnb logo" height="50" width="100" src={logo}></img>
-          </a>
+          
         </div>
         <div className="headerMiddle">
           <div className="hMiddle">
