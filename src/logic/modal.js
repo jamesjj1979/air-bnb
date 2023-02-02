@@ -66,8 +66,15 @@ let contactClose = function (e) {
        "8xArrDlQhIgOdHQTj"
      )
      .then(
-       (result) => {
-         console.log(result.text);
+       () => {
+         const sent = document.getElementById("sent");
+         sent.innerText = "Your message was sent!!"
+         
+        setTimeout(() => {
+          sent.innerText = "";
+        }, "5000");
+
+
        },
        (error) => {
          console.log(error.text);
@@ -103,6 +110,7 @@ let contactClose = function (e) {
             <a href={href} onClick={openContact}>
               Contact
             </a>
+            <div id="sent"></div>
           </li>
         </ul>
       </nav>
