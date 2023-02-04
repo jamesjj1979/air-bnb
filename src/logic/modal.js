@@ -39,50 +39,46 @@ function Modal() {
 
   let openContact = function (e) {
     const contact = document.getElementById("contact");
-     contact.classList.add("show-contact");
-     e.preventDefault();
-  
-   
+    contact.classList.add("show-contact");
+    e.preventDefault();
   };
-let contactClose = function (e) {
-  const contact = document.getElementById("contact");
-  contact.classList.remove("show-contact");
-  e.preventDefault();
-};
+  let contactClose = function (e) {
+    const contact = document.getElementById("contact");
+    contact.classList.remove("show-contact");
+    e.preventDefault();
+  };
 
   let href = "";
   let github = "https://github.com/jamesjj1979";
 
-  const form = useRef()
+  const form = useRef();
   const sendEmail = (e) => {
     const contact = document.getElementById("contact");
-   e.preventDefault();
+    e.preventDefault();
 
-   emailjs
-     .sendForm(
-       "service_yc9362a",
-       "template_kk86wjd",
-       form.current,
-       "8xArrDlQhIgOdHQTj"
-     )
-     .then(
-       () => {
-         const sent = document.getElementById("sent");
-         sent.innerText = "Your message was sent!!"
-         
-        setTimeout(() => {
-          sent.innerText = "";
-        }, "5000");
+    emailjs
+      .sendForm(
+        "service_yc9362a",
+        "template_kk86wjd",
+        form.current,
+        "8xArrDlQhIgOdHQTj"
+      )
+      .then(
+        () => {
+          const sent = document.getElementById("sent");
+          sent.innerText = "Your message was sent!!";
 
-
-       },
-       (error) => {
-         console.log(error.text);
-       }
-   );
-   e.target.reset()
+          setTimeout(() => {
+            sent.innerText = "";
+          }, "5000");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
     contact.classList.remove("show-contact");
- };
+  };
 
   return visible ? (
     <div className="modalWrapper">
@@ -140,8 +136,8 @@ let contactClose = function (e) {
               </p>
 
               <p>
-
-                
+                Alot of people seem to ask ask me why coding? Well the awnser to
+                that is simply that I enjoy it. I love the problem solving and the highs and lows it brings. This is the way I would like to live my life.
               </p>
             </div>
           </div>
