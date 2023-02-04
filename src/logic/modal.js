@@ -127,7 +127,22 @@ let contactClose = function (e) {
               <h3>About Me</h3>
             </div>
             <div className="modal-content">
-              <p>This is working...</p>
+              <p>Hello</p>
+              <p>
+                My name is Jim Jorgensen, and I am aiming to become a full-stack
+                developer. While incarcerated at the Michigan State Prison in
+                2020, I participated in the Last Mile Program. Upon re-entering
+                society in 2021, I continued my learning journey and did a
+                3-month internship with Ithaka Harbors, working on their visual
+                essays project. In 2022, I did a six-month month internship with
+                a startup called Uptrust, working on the front end of their
+                website.
+              </p>
+
+              <p>
+
+                
+              </p>
             </div>
           </div>
         </div>
