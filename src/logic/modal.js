@@ -4,6 +4,9 @@ import emailjs from "@emailjs/browser";
 
 import React, { useEffect, useState, useRef } from "react";
 
+// AIRBNB  This whole project was for you. I was having fun it might have gotten a little out of contol, but my Last Mile advocate stoped me before I wrote test for all these pages. I choose this page to highlight though im proud of it all.
+
+
 function Modal() {
   const [visible, setVisible] = useState(false);
 
