@@ -10,6 +10,8 @@ import React, { useEffect, useState, useRef } from "react";
 function Modal() {
   const [visible, setVisible] = useState(false);
 
+
+  // timing functions for fadein
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(true);
@@ -23,7 +25,7 @@ function Modal() {
     }, 28000);
     return () => clearTimeout(timer1);
   }, []);
-
+//open and close for associated page modals
   let navigationButton = function (e) {
     document.body.classList.toggle("show-nav");
     e.preventDefault();
@@ -51,6 +53,7 @@ function Modal() {
     e.preventDefault();
   };
 
+  // contact form js so the contact me form would actually work
   let href = "";
   let github = "https://github.com/jamesjj1979";
 
